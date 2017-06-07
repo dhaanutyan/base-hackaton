@@ -25,11 +25,13 @@
       // create new one
       this_.mesh = new THREE.Object3D()
       this_.data3dView = new BASE.three.Data3dView({ parent: this_.mesh })
+      this.el.data3dView = this_.data3dView
       
       // get product data
       BASE.product.get(productId).then(function(result){
         // update view
         this_.data3dView.set(result.data3d)
+        this_.el.data3d = result.data3d
         this_.el.setObject3D('mesh', this_.mesh)
         // emit event
         this_.el.emit('model-loaded', {format: 'data3d', model: this_.mesh});
