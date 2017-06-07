@@ -10,10 +10,7 @@
   <!-- base components -->
   <script src="components/product.js"></script>
   <script src="components/data3d.js"></script>
-   <script>
-   document.querySelector("#shelf").data3d.mesh.Wood.material = 'Black Walnut Tree' // changes the material
-document.querySelector("#shelf").data3dView.set($("#shelf").data3d) // updates the 3d mesh to display
-	</script>
+   
 </head>
 <body>
 <a-scene>
@@ -43,5 +40,10 @@ document.querySelector("#shelf").data3dView.set($("#shelf").data3d) // updates t
   </a-entity>
  
 </a-scene>
+<script>
+   document.querySelector("#shelf").data3d.mesh.Wood.material = 'Black Walnut Tree' // changes the material
+document.querySelector("#shelf").data3dView.set($("#shelf").data3d) // updates the 3d mesh to display
+	</script>
 </body>
+
 </html>
