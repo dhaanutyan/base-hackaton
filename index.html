@@ -30,7 +30,7 @@
   <a-entity base-product="id:10344b13-d981-47a0-90ac-f048ee2780a6" position="-2 0 -3.2" rotation="0 180 0"></a-entity>-->
 
   <!-- data3d files specified by BASE-store-key or URL  -->
-  <a-entity id="shelf" base-data3d="key:/535e624259ee6b0200000484/170607-1648-b52wzm/657284f0-3869-4a55-a85f-753f7893267b.gz.data3d.buffer" position="5 10 -5" scale="10 10 10">
+  <a-entity  base-data3d="key:/535e624259ee6b0200000484/170607-1648-b52wzm/657284f0-3869-4a55-a85f-753f7893267b.gz.data3d.buffer" position="5 10 -5" scale="10 10 10">
   	 <a-animation attribute="rotation"
                      easing="linear"
                      dur="40000"
@@ -40,10 +40,10 @@
   </a-entity>
  
 </a-scene>
-<script>
+ <!--<script>
    document.querySelector("#shelf").data3d.mesh.Wood.material = 'Black Walnut Tree' // changes the material
 document.querySelector("#shelf").data3dView.set($("#shelf").data3d) // updates the 3d mesh to display
-	</script>
+	</script>-->
 </body>
 
 </html>
