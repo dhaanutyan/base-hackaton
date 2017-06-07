@@ -1,0 +1,29 @@
+{
+  "name": "a-frame-components",
+  "version": "0.0.2-alpha.1",
+  "description": "Base components for A-frame.",
+  "homepage": "http://archilogic.com/",
+  "repository": "archilogic-com/a-frame-components",
+  "license": "MIT",
+  "author": {
+    "name": "archilogic",
+    "email": "dev.rocks@archilogic.com",
+    "url": "https://archilogic.com"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dist": "node tasks/generate-distributables.js"
+  },
+  "engines": {
+    "node": "7.5.x"
+  },
+  "devDependencies": {
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "serve-index": "^1.9.0",
+    "serve-static": "1.12.3",
+    "bluebird": "^3.5.0",
+    "uglify-js": "^3.0.10"
+  }
+}
