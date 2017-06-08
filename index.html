@@ -7,6 +7,7 @@
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   <!-- base library. distributed via 'npm run dist' in https://github.com/archilogic-com/base-query -->
   <script src="https://code.archilogic.com/base-query-0.0.5-alpha.6.min.js"></script>
+ 
   <!-- base components -->
   <script src="components/product.js"></script>
   <script src="components/data3d.js"></script>
@@ -14,6 +15,7 @@
 </head>
 <body>
 <a-scene>
+ 
   <a-entity>
    <a-sky src="grid.jpg" rotation="0 -130 0" radius="1000"></a-sky>
      <a-animation attribute="rotation"
@@ -23,11 +25,13 @@
                      to="0 0 0"
                      repeat="indefinite"></a-animation>    
 	</a-entity>
+	<a-entity geometry="primitive: plane; height: 10; width: 10" position="0 5.5 -60" rotation="-90 0 0" material="shader: flat; side: double;
+src: url(images/wall.jpg)"></a-entity>
   <a-entity camera="userHeight: 1.6" wasd-controls="acceleration:6;easing:6;" look-controls="reverseMouseDrag:false" position="0 0 0"></a-entity>
 
   <!-- products specified by id (= productResourceId) -->
-  <!-- get more: https://spaces.archilogic.com/products -->
-  <a-entity base-product="id:63ae943a-3af5-4b01-9448-514f564d9abc" position="-2 0 -3.2" rotation="0 180 0"></a-entity>
+  <!-- get more: https://spaces.archilogic.com/products 
+  <a-entity base-product="id:63ae943a-3af5-4b01-9448-514f564d9abc" position="-2 0 -3.2" rotation="0 180 0"></a-entity>-->
 
   <!-- data3d files specified by BASE-store-key or URL  -->
   <a-entity base-data3d="key:/535e624259ee6b0200000484/170607-1648-b52wzm/657284f0-3869-4a55-a85f-753f7893267b.gz.data3d.buffer" position="5 10 -5" scale="10 10 10">
