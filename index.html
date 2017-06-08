@@ -3,108 +3,48 @@
 <head>
   <title>Base for Aframe</title>
   <meta name="description" content="BASE components for aframe demo">
+  <!-- jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <!-- aframe library -->
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-    <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
   <!-- base library. distributed via 'npm run dist' in https://github.com/archilogic-com/base-query -->
   <script src="https://code.archilogic.com/base-query-0.0.5-alpha.6.min.js"></script>
- 
   <!-- base components -->
-  <script src="components/product.js"></script>
-  <script src="components/data3d.js"></script>
-   
+  <script src="/components/product.js"></script>
+  <script src="/components/data3d.js"></script>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div>
-<a-scene>
- 
-  <a-entity>
-     <a-sky src="grid.jpg" rotation="0 0 0" radius="1000"></a-sky>
-        <a-animation attribute="rotation"
-                     easing="linear"
-                     dur="200000"
-                     fill="both"
-                     to="0 0 0"
-                     repeat="indefinite"></a-animation>
-    </a-entity>
+  
+  <h1> Hello World</h1>
 
-    <a-assets>
-        <img id="ground" src="ground.jpg">
-    </a-assets>
+  <div id="my-model">
+    <!-- https://aframe.io/docs/0.5.0/components/embedded.html -->
+    <a-scene embedded>
 
+      <a-entity camera="userHeight: 1.6" wasd-controls="acceleration:6;easing:6;" look-controls="reverseMouseDrag:false" position="-2 0 0"></a-entity>
 
-        <a-entity geometry="primitive:sphere" material="shader:gif;src:url(3.gif);" position="15 3 -2"></a-entity>
+      <!-- products specified by id (= productResourceId) -->
+      <!-- get more: https://spaces.archilogic.com/products -->
+      <a-entity id="furniture-placeholder" base-product="id:10344b13-d981-47a0-90ac-f048ee2780a6" position="-2 0 -3.2" rotation="0 180 0"></a-entity>
 
+      <!-- data3d files specified by BASE-store-key or URL -->
+      <a-entity base-data3d="key:/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer" position="0 0 0"></a-entity>
 
-    <a-plane position="0 -200 0" src="floor.png" height="100" width="100" rotation="-90 0 0" scale="3 3 3" transparent="true"></a-plane>
-
-
-
-            <!-- Yellow -->
-            <a-entity position="3 0 1">
-                <a-sphere position="0 0.5 0" radius="0.5" src="tex/tex_02.jpg" metalness="0.2"></a-sphere>
-                <a-animation attribute="rotation"
-                             dur="10000"
-                             easing="linear"
-                             fill="forwards"
-                             to="0 360 0"
-                             repeat="indefinite"></a-animation>
-            </a-entity>
-
-
-
-    <a-curvedimage src="5.gif" shader="gif" radius="2" theta-length="60" position="0 1.6 1" rotation="0 0 0" opacity="0.8"></a-curvedimage>
-
-
-
-        <!-- <a-assets><video id="penguin-sledding" autoplay loop src="1.mp4">
-        </a-assets>-->
-        <!-- Using the asset management system. 
-        <a-video src="#penguin-sledding" width="2" height="4" position="0 0 -5"></a-video>-->
-        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-
-
-
-
-   
-        <!-- Yellow -->
-        <a-entity position="-4 0 -4">
-            <a-sphere position="0 18 0" radius="3" src="tex/tex_06.jpg" metalness="0.3"></a-sphere>
-        </a-entity>
-        <a-animation attribute="rotation"
-                     dur="38000"
-                     easing="linear"
-                     fill="forwards"
-                     to="360 360 360"
-                     repeat="indefinite"></a-animation>
-	
-  <a-entity camera="userHeight: 1.6" wasd-controls="acceleration:6;easing:6;" rotation="0 -180 0" look-controls="reverseMouseDrag:false" position="3 5 -15"></a-entity>
-
-  <!-- products specified by id (= productResourceId) -->
-  <!-- get more: https://spaces.archilogic.com/products 
-  <a-entity base-product="id:63ae943a-3af5-4b01-9448-514f564d9abc" position="-2 0 -3.2" rotation="0 180 0"></a-entity>-->
-
-  <!-- data3d files specified by BASE-store-key or URL  -->
-  <a-entity base-data3d="key:/535e624259ee6b0200000484/170608-1402-wvyp3m/89f9e208-a963-49e1-b0cf-90257c1c1587.gz.data3d.buffer" position="0 0 0" scale="1 1 1">
-  	 <a-animation attribute="rotation"
-                     easing="linear"
-                     dur="40000"
-                     fill="both"
-                     to="0 0 0"
-                     repeat="indefinite"></a-animation>   
-  </a-entity>
- 
-</a-scene>
-	</div>
-	<div style="position: absolute;">  
+    </a-scene>
+  </div>
+  
   <!-- buttons -->
   <button id="randomize" class="button">&#x27F3;</button>
   <button id="left" class="button">&#x21e6;</button>
   <button id="right" class="button">&#x21e8;</button>
   <button id="rotate" class="button">&#x293B;</button>
   <button id="add" class="button">+</button>
-  </div>
+  
   <script>
     
     var productIds = [
@@ -156,6 +96,6 @@
     })
     
   </script>
-</body>
 
+</body>
 </html>
