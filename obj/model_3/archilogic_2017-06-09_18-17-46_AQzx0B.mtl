@@ -1,0 +1,115 @@
+# exported from archilogic.com
+
+
+
+
+newmtl top
+Kd 0.463 0.412 0.337
+Ka 0.463 0.412 0.337
+Ks 0.667 0.667 0.667
+Ns 30
+d 1
+map_Kd textures/b9a74aab.source.jpg
+map_Ks textures/1164aee0.source.jpg
+map_Kn textures/d6469627.source.jpg
+
+newmtl side
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/6b963334.source.jpg
+map_Ks textures/b4b5fc56.source.jpg
+map_Kn textures/3758cbf9.source.jpg
+
+newmtl back
+Kd 0.976 0.882 0.922
+Ka 0.976 0.882 0.922
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/9a4086cd.source.jpg
+map_Ks textures/b4b5fc56.source.jpg
+map_Kn textures/3758cbf9.source.jpg
+
+newmtl top_1
+Kd 0.2 0.2 0.2
+Ka 0.2 0.2 0.2
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl frame
+Kd 0.77 0.77 0.77
+Ka 0.77 0.77 0.77
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl glass
+Kd 0.949 1 0.988
+Ka 0.949 1 0.988
+Ks 0 1 0.769
+Ns 100
+d 0.14
+
+newmtl front_1
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.25 0.25 0.25
+Ns 100
+d 1
+map_Kd textures/6b963334.source.jpg
+map_Ks textures/b4b5fc56.source.jpg
+map_Kn textures/3758cbf9.source.jpg
+
+newmtl frame_2
+Kd 0.95 0.95 0.95
+Ka 0.95 0.95 0.95
+Ks 0.04 0.04 0.04
+Ns 30
+d 1
+
+newmtl handle
+Kd 0.5 0.5 0.5
+Ka 0.5 0.5 0.5
+Ks 0.34 0.34 0.34
+Ns 40
+d 1
+
+newmtl leaf
+Kd 0.604 0.533 0.475
+Ka 0.604 0.533 0.475
+Ks 0.19 0.19 0.19
+Ns 20
+d 1
+map_Kd textures/13bc6de9.source.jpg
+map_Ks textures/bfb13fd8.source.jpg
+map_Kn textures/37bb13e6.source.jpg
+
+newmtl railing
+Kd 0.737 0.737 0.737
+Ka 0.737 0.737 0.737
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl 01___Default
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.1 0.1 0.1
+Ns 5
+d 1
+map_Kd textures/3baae543.preview.jpg
+map_Ks textures/dd117968.preview.jpg
+
+newmtl SimplygonMaterial
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.58 0.58 0.58
+Ns 20
+d 1
+map_Kd textures/24eecaef.source.jpg
+map_Ks textures/25fc63ed.source.jpg
+map_Kn textures/7191770c.source.jpg

@@ -1,0 +1,155 @@
+# exported from archilogic.com
+
+
+
+
+newmtl top
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.031 0.031 0.031
+Ns 40
+d 1
+map_Kd textures/720569b9.source.jpg
+
+newmtl side
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/e13d6dd0.source.jpg
+map_Ks textures/93ce155c.source.jpg
+map_Kn textures/af1f8c2a.source.jpg
+
+newmtl front
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/526e5796.source.jpg
+map_Ks textures/93ce155c.source.jpg
+map_Kn textures/af1f8c2a.source.jpg
+
+newmtl back
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.2 0.2 0.2
+Ns 15
+d 1
+map_Kd textures/8cf2b3c4.source.jpg
+
+newmtl top_1
+Kd 0.2 0.2 0.2
+Ka 0.2 0.2 0.2
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl frame
+Kd 0.77 0.77 0.77
+Ka 0.77 0.77 0.77
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl glass
+Kd 0.949 1 0.988
+Ka 0.949 1 0.988
+Ks 0 1 0.769
+Ns 100
+d 0.14
+
+newmtl leaf
+Kd 0.95 0.95 0.95
+Ka 0.95 0.95 0.95
+Ks 0.04 0.04 0.04
+Ns 30
+d 1
+
+newmtl handle
+Kd 0.5 0.5 0.5
+Ka 0.5 0.5 0.5
+Ks 0.34 0.34 0.34
+Ns 40
+d 1
+
+newmtl threshold
+Kd 0.89 0.82 0.69
+Ka 0.89 0.82 0.69
+Ks 0.667 0.667 0.667
+Ns 30
+d 1
+map_Kd textures/f7e63c80.source.jpg
+map_Ks textures/5713e1fe.source.jpg
+map_Kn textures/0540ba1b.source.jpg
+
+newmtl top_3
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/5523cb04.source.jpg
+map_Ks textures/7b3a9078.source.jpg
+map_Kn textures/37c77a91.source.jpg
+
+newmtl side_1
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.424 0.424 0.424
+Ns 50
+d 1
+map_Kd textures/a9b54a5e.source.jpg
+map_Ks textures/539f6884.source.jpg
+map_Kn textures/af4a6816.source.jpg
+
+newmtl railing
+Kd 0.737 0.737 0.737
+Ka 0.737 0.737 0.737
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl curtain
+Kd 0.847 0.573 0.592
+Ka 0.847 0.573 0.592
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl Standardmaterial
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.18 0.18 0.18
+Ns 15
+d 1
+map_Kd textures/9cf8feba.preview.jpg
+map_Ks textures/23f85147.preview.jpg
+
+newmtl 01___Default
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.5 0.5 0.5
+Ns 5
+d 1
+map_Kd textures/fb6adc0e.preview.jpg
+map_Ks textures/0fd0fa08.preview.jpg
+
+newmtl 07 - Default
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.315 0.315 0.315
+Ns 10
+d 1
+map_Kd textures/296ccc73.preview.jpg
+map_Ks textures/c2ccca05.preview.jpg
+
+newmtl 03___Default
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.18 0.18 0.18
+Ns 4
+d 1
+map_Kd textures/1fbe5fbc.preview.jpg
+map_Ks textures/38f37a8e.preview.jpg
