@@ -1,0 +1,106 @@
+# exported from archilogic.com
+
+
+
+
+newmtl top
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.376 0.376 0.376
+Ns 40
+d 1
+map_Kd textures/37712cdd.source.png
+map_Ks textures/287f5aff.source.png
+map_Kn textures/90809ddc.source.png
+
+newmtl side
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/eabfa0fa.source.jpg
+map_Ks textures/16ee577f.source.jpg
+map_Kn textures/f918e50f.source.jpg
+
+newmtl back
+Kd 0.855 0.98 0.82
+Ka 0.855 0.98 0.82
+Ks 0.25 0.25 0.25
+Ns 20
+d 1
+map_Kd textures/beae9365.source.jpg
+map_Ks textures/16ee577f.source.jpg
+map_Kn textures/f918e50f.source.jpg
+
+newmtl top_1
+Kd 0.2 0.2 0.2
+Ka 0.2 0.2 0.2
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl frame
+Kd 0.77 0.77 0.77
+Ka 0.77 0.77 0.77
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
+
+newmtl glass
+Kd 0.949 1 0.988
+Ka 0.949 1 0.988
+Ks 0 1 0.769
+Ns 100
+d 0.14
+
+newmtl front_1
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.25 0.25 0.25
+Ns 100
+d 1
+map_Kd textures/eabfa0fa.source.jpg
+map_Ks textures/16ee577f.source.jpg
+map_Kn textures/f918e50f.source.jpg
+
+newmtl frame_2
+Kd 0.95 0.95 0.95
+Ka 0.95 0.95 0.95
+Ks 0.04 0.04 0.04
+Ns 30
+d 1
+
+newmtl handle
+Kd 0.5 0.5 0.5
+Ka 0.5 0.5 0.5
+Ks 0.34 0.34 0.34
+Ns 40
+d 1
+
+newmtl leaf
+Kd 1 1 1
+Ka 1 1 1
+Ks 0.19 0.19 0.19
+Ns 20
+d 1
+map_Kd textures/f548cf55.source.jpg
+map_Ks textures/a7e81d3d.source.jpg
+map_Kn textures/6edc3f84.source.jpg
+
+newmtl threshold
+Kd 0.89 0.82 0.69
+Ka 0.89 0.82 0.69
+Ks 0.667 0.667 0.667
+Ns 30
+d 1
+map_Kd textures/9c037d20.source.jpg
+map_Ks textures/c2e5a4b6.source.jpg
+map_Kn textures/09ec9e2e.source.jpg
+
+newmtl railing
+Kd 0.737 0.737 0.737
+Ka 0.737 0.737 0.737
+Ks 0.25 0.25 0.25
+Ns 0.1
+d 1
