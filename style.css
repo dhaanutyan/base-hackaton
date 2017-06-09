@@ -1,19 +1,26 @@
-body {
-  background: pink;
+body {	
 }
 
-#my-model {
-  border: 3px;
-  border-radius: 10px;
-  width: 600px;
-  height: 400px;
-  margin-bottom: 20px;
+.text_block
+{ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+color: aliceblue;
+position: absolute;
+	top: 80%;
+	 left: 6%;
 }
-
+.b_block{
+	 position: absolute;
+	 top: 94%;
+	 left: 45%;
+	 margin: 0px 0 0 0px;
+	 width:300px;
+	 height:300px;
+}
 .button {
-  font-size: 24px;
-  height: 60px;
-  line-height: 60px;
-  width: 60px;
-  text-align: center;
+	background: #007AFF;
+	opacity: inherit;
+    border:hidden;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
 }

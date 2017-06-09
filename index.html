@@ -4,14 +4,15 @@
   <title>Base for Aframe</title>
   <meta name="description" content="BASE components for aframe demo">
   <!-- aframe library -->
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
   <!-- base library. distributed via 'npm run dist' in https://github.com/archilogic-com/base-query -->
   <script src="https://code.archilogic.com/base-query-0.0.5-alpha.6.min.js"></script>
-  <!-- base components -->
+<!-- base components -->
   <script src="components/product.js"></script>
   <script src="components/data3d.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div>
@@ -55,8 +56,6 @@
  <!-- data3d files specified by BASE-store-key or URL  -->
  
 
-  	 
-  </a-entity>
  
  <!-- Sphere with gif 
         <a-entity geometry="primitive:sphere" material="shader:gif;src:url(3.gif);" position="15 3 -2"></a-entity>-->
@@ -68,66 +67,26 @@
         <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
 </a-scene>
 	</div>
-	
-<div style="position: absolute;">  
-  <!-- buttons -->
-  <button id="randomize" class="button">&#x27F3;</button>
-  <button id="left" class="button">&#x21e6;</button>
+	<div class="text_block">
+	  <h1>Nice carpet!</h1>
+	  <p>Fill any VR scene with 3D objects easily with our opensource JS framework</p>
+	</div>
+	<div class="lr_block">
+	<button id="left" class="button">&#x21e6;</button>
   <button id="right" class="button">&#x21e8;</button>
-  <button id="rotate" class="button">&#x293B;</button>
-  <button id="add" class="button">+</button>
+	</div>
+	
+<div class="b_block"> 
+  
+  <!-- buttons -->
+ 
+  
+  
+  <button id="color_1" class="button">1</button>
+  <button id="color_2" class="button">2</button>
+  <button id="color_3" class="button">3</button>
   </div>
   
-  <script>   
-  var productIds = [
-      '10344b13-d981-47a0-90ac-f048ee2780a6',
-      'c0b88af0-ef7d-4e9e-8718-7e8852f65646',
-      '814b1bf9-988d-42a5-9c9a-b42f0d82b9ac',
-      '34cba29e-f41b-461d-add4-37f47968431a',
-      'c885041b-c673-4382-bacf-592f94f3fa09',
-      '0bd8f3e1-6875-4010-9351-e74fde5e0b6b'
-    ]
-    
-    function getRandomFurnitureId () {
-      var randomIndex = Math.round(Math.random()*(productIds.length-1))
-      console.log(randomIndex)
-      return productIds[randomIndex]
-    }
-    
-    var $furniture = $('#furniture-placeholder')
-    
-    $('#randomize').on('click', function(){
-      // set new ID
-      $furniture.attr('base-product', 'id:'+getRandomFurnitureId() )
-    })
-    
-    $('#left').on('click', function(){
-      // get current position
-      var p = $furniture.attr('position')
-      // set new position
-      $furniture.attr('position', (p.x-0.1)+' '+p.y+' '+p.z )
-    })
-    
-    $('#right').on('click', function(){
-      // get current position
-      var p = $furniture.attr('position')
-      // set new position
-      $furniture.attr('position', (p.x+0.1)+' '+p.y+' '+p.z )
-    })
-    
-    $('#rotate').on('click', function(){
-      // get current rotation
-      var r = $furniture.attr('rotation')
-      // set new rotation
-      $furniture.attr('rotation', r.x+' '+(r.y+90)+' '+r.z )
-    })
-    
-    $('#add').on('click', function(){
-      // add new entity
-      $('a-scene').append('<a-entity base-product="id:'+getRandomFurnitureId()+'" position="-2 0 -3.2"><a-entity>')
-    })
-    
-  </script>
 </body>
 
 </html>
